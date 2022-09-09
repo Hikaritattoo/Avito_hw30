@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "avito_hw30"
+version = "0.1.0"
+description = ""
+authors = ["Olga Smotrova <olgahikaritattoo@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.1"
+postgres = "^4.0"
+Pillow = "^9.2.0"
+djangorestframework = "^3.13.1"
+djangorestframework-simplejwt = "^5.2.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
