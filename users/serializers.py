@@ -33,11 +33,9 @@ class UserCreateSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         user = User.objects.create(**validated_data)
-
         location, _ = Location.objects.get_or_create(name=self._location)
         user.location = location
         user.save()
-
         return user
 
 
@@ -60,9 +58,7 @@ class UserUpdateSerializer(serializers.ModelSerializer):
 
     def save(self):
         user = super().save()
-
         location, _ = Location.objects.get_or_create(name=self._location)
         user.location = location
         user.save()
-
         return user

@@ -8,6 +8,7 @@ from ads.views import (AdListView, AdDetailView, AdUpdateView, AdImageView, AdDe
                        SelectionDeleteView, SelectionCreateView, SelectionListView
                        )
 
+
 router = routers.SimpleRouter()
 router.register('location', LocationViewSet)
 

@@ -1,6 +1,7 @@
 from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-from .views import UserListView, UserDetailView, UserUpdateView, UserDeleteView, UserCreateView
+from users.views import UserListView, UserDetailView, UserUpdateView, UserDeleteView, UserCreateView
+
 
 urlpatterns = [
     path('user/', UserListView.as_view()),

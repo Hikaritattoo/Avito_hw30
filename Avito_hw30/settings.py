@@ -148,5 +148,5 @@ REST_FRAMEWORK = {
     ],
 }
 
-
+# Change auth model
 AUTH_USER_MODEL = 'users.User'

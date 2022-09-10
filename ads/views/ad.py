@@ -11,7 +11,6 @@ class AdListView(ListAPIView):
     serializer_class = AdSerializer
 
     def get(self, request, *args, **kwargs):
-
         categories = request.GET.getlist('cat', None)
         cat_query = None
 
@@ -20,7 +19,6 @@ class AdListView(ListAPIView):
                 cat_query = Q(category__id__exact=cat_id)
             else:
                 cat_query |= Q(category__id__exact=cat_id)
-
         if cat_query:
             self.queryset = self.queryset.filter(cat_query)
 
