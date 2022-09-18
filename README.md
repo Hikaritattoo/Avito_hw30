@@ -1,5 +1,5 @@
-# Homework_30
-## Simple "AVITO" simulator with DRF models and views, AbstractUser, Authentication and JWT authorization
+# Homework_31
+## Simple "AVITO" simulator with validators and tests
 
 ***To start: run docker-compose file or start manually from terminal using docker-compose up -d***
 
